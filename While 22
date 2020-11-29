@@ -1,0 +1,24 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{setlocale(LC_ALL, "RUS");
+
+int a,b,c;
+b=1;
+c=0;
+cout<<"Введите число"<<endl;
+cin>>a;
+while(b<a-1){
+b++;
+if(a%b==0){
+c++;
+}}
+if(c>0)
+cout<<"False";
+else
+cout<<"True";
+}
