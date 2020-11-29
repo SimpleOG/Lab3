@@ -1,0 +1,20 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{
+    setlocale(LC_ALL, "RUS");
+    int a,b;
+    cout<<"Введите первое число"<<endl;
+    cin>>a;
+    cout<<"Введите второе число"<<endl;
+    cin>>b;
+    for(int i=0;i<b-a;i++){
+        for(int g=0;g<i;g++){
+            cout<<a+i<<" ";
+}
+}
+}
