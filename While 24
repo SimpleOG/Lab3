@@ -1,0 +1,25 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{setlocale(LC_ALL, "RUS");
+
+int n,f,f1,f2;
+f=0;
+f1=1;
+f2=1;
+cout<<"Введите число N"<<endl;
+cin>>n;
+while(f<n){
+f=f1+f2;
+f2=f1;
+f1=f;
+}
+if(f==n)
+    cout<<"True";
+else
+    cout<<"false";
+}
