@@ -1,0 +1,36 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{setlocale(LC_ALL, "RUS");
+int a,n,c,d;
+d=0;
+cout<<"Введите количество чисел"<<endl;
+cin>>n;
+cout<<"Введите первое число последовательности"<<endl;
+cin>>a;
+cout<<"Введите остальные числа последовательности"<<endl;
+for(int i=2;i<n;i++){
+
+    cin>>c;
+    if(c>a&&d==0){
+        d=i;
+        a=c;
+        break;
+    }
+    else
+        a=c;
+
+}
+if(d==0){
+    cout<<d;
+    }
+    else
+        cout<<a;
+
+return 0;
+
+}
